@@ -27,11 +27,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 10 # 指定node版本
-          
+
       - uses: actions/checkout@v2
       - name: Install modules
         run: npm i eslint
       - name: Run ESLint
-        run: eslint . --ext .js,.jsx,.ts,.tsx
+        run: npm run lint
 
 
